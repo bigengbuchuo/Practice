@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time</title>
+    <style>
+        html {
+            font-size:62.5%;
+        }
+        *{
+            margin:0;
+            padding:0;
+            text-decoration:none;
+            list-style:none;
+        }
+        .wrapper {
+            /* border:1px solid black; */
+            width:40vw;   
+            height:50vh; 
+            position:relative;
+            margin:13em auto;
+            transition:0.3s;
+        }
+        .newrapper {
+            width:40vw;   
+            height:50vh; 
+            position:relative;
+            margin:13em auto;
+            transform:translate(-8vw);
+            transition:0.3s;
+        }
+         .top {
+            /* border:1px solid black; */
+            position:absolute;
+            left:50%;
+            margin-left:-26%;
+            margin-top:20%;
+        }
+        .minute,.hour,.minutespot,.hourspot {
+            color:#bbb;
+        }
+        .left {
+            /* border:1px solid black; */
+            width:5vw;
+            height:8vh;
+            position:absolute;
+            left:25%;
+            bottom:18%;
+            background-image:url(./src/img/back.png);
+            background-size:3vw;
+            background-repeat:no-repeat;
+            background-position:center;
+            vertical-align:center;
+        }
+        .left:hover {
+            background-color: #F7F7F7;
+        }
+        .middle {
+            border:3px solid rgb(196, 219, 233);
+            width:6vw;
+            height:6vw;
+            position:absolute;
+            left:50%;
+            margin-left:-2.5vw;
+            bottom:18%;
+            vertical-align:top;
+            background-image:url(./src/img/start.png);
+            background-size:3vw; 
+            background-repeat:no-repeat;
+            overflow: hidden;
+            border-radius: 50%; 
+            background-position:60% -43%;
+        }
+        .middle:hover {
+            background-color:#F7F7F7;
+            
+            
+        }
+        .right {
+            /* border:1px solid black; */
+            width:5vw;
+            height:8vh;
+            position:absolute;
+            right:22%;
+            bottom:18%;
+            background-image:url(./src/img/time2.png);
+            background-size:2.5vw;
+            background-repeat:no-repeat;
+            background-position:center;
+            vertical-align:center;
+        }  
+        .right:hover {
+            background-color: #F7F7F7;
+        }
+        .top> div{
+            display:inline;
+            font-size:5vw;
+        }
+        .top> span{
+            display:inline;
+            font-size:5vw;
+        }
+        .top .haomiao {
+            font-size:2.5vw;
+        }
+        .rightlist{
+            width:26vw;
+            height:50vh;
+            /* border:1px solid black; */
+            position:absolute;
+            top:0;
+            right:-30vw;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        .textone {
+            /* border:1px solid black; */
+            display:block;
+            font-size:2.2vh;
+            font-weight:600;
+            padding-left:2.5vw;
+        }
+        .texttwo {
+            /* border:1px solid black; */
+            display:block;
+            font-size:2.2vh;
+            margin-top:0.5vh;
+            padding-left:2.5vw;
+            color:#bbb;
+        }
+        .list{
+            display: block;
+            /* border:1px solid black; */
+            width:20vw;
+            margin-left:2.5vw;
+            display:inline-block;
+        }
+        .num{
+            display:block;
+            width:17.4vw;
+            height:2vh;
+            /* border:1px solid black; */
+            color:#bbb;
+            margin-top:0.6vh;
+            font-size:1.5vh;
+        }
+        .quan{
+            display:block;
+            width:17.4vw;
+            height:3vh;
+            /* border:1px solid black; */
+            font-size:2.2vh;
+            color:black;
+            margin-top:0.6vh;
+        }
+        .duan{
+            display:block;
+            width:17.4vw;
+            height:2vh;
+            /* border:1px solid black; */
+            font-size:1.5vh;
+            color:black;
+            margin-top:0.6vh;
+            margin-bottom:2vh;
+        }
+        .hour,.hourspot,.minute,.minutespot,.miao,.miaospot,.haomiao{
+            display:inline-block;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <div class="hour">00</div>
+            <span class="hourspot">:</span>
+            <div class="minute">00</div>
+            <span class="minutespot">:</span>
+            <div class="miao">00</div>
+            <span class="miaospot">.</span>
+            <div class="haomiao">00</div>
+        </div>
+        <div>
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+        <div class="rightlist">
+            <div class="textone">分圈计时</div>
+            <div class="texttwo">分段计时</div>
+        </div>
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+</html>
+
