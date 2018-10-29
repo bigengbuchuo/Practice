@@ -15,6 +15,8 @@ var hourspot=document.getElementsByClassName("hourspot")[0];
 var count=1;
 k=0;
 var flag;
+var sum=0;
+var nowtime=0;
 btn.onclick=function(){
     if(flag){
         flag=0;
@@ -27,13 +29,11 @@ btn.onclick=function(){
         right.style.backgroundImage="url(./src/img/time.png)";
         count=0;
         var date1=new Date();
-        var date2=new Date();
         timer=setInterval(function(){
-            var date = new Date();
-            date2.setTime(date.getTime());
+            var date2 = new Date();
             sum=date2-date1+k;
-            judge(sum);
-            console.log(timer);
+            digit=judge(sum);
+            time=infor(digit);
         },10);
     }else{//count=0,shugang
         btn.style.backgroundPosition="60% -43%";
@@ -54,12 +54,13 @@ function judge(sum) {
     b=Math.floor(sum/60%60);
     a=Math.floor(sum/3600%3600);
     // console.log(a,b,c,d);
-    infor(a,b,c,d);
-}
-
-function infor(a,b,c,d) {
+    // infor(a,b,c,d);
     digit=new Array();
     digit.push(a,b,c,d);
+    return digit;
+}
+
+function infor(digit) {
     for(i=0;i<4;i++){
         if(digit[i]<10){
             digit[i]="0"+digit[i];
@@ -78,6 +79,7 @@ function infor(a,b,c,d) {
     time.children[2].innerHTML=digit[1];
     time.children[4].innerHTML=digit[2];
     time.children[6].innerHTML=digit[3];
+    return time;
 }
 
 left.onclick=function() {
@@ -99,6 +101,7 @@ var rightlist=document.getElementsByClassName("rightlist")[0];
 rightlist.style.display="none";
 var countnum=0;
 var j=-1;
+var date3=0;
 right.onclick=function() {
     rightlist.style.display="block";
     countnum++;
@@ -107,9 +110,11 @@ right.onclick=function() {
 
     var div=document.createElement("div");  //waibiankuang
     div.setAttribute("class","list");
-    rightlist.appendChild(div);
+    // rightlist.appendChild(div);
+    rightlist.insertBefore(div,rightlist.children[2]);
 
-    var list=document.getElementsByClassName("list")[j];
+
+    var list=document.getElementsByClassName("list")[0];
     div=document.createElement("div");
     div.setAttribute("class","num");
     list.appendChild(div);
@@ -122,15 +127,24 @@ right.onclick=function() {
     div.setAttribute("class","duan");
     list.appendChild(div);
 
-    num=document.getElementsByClassName("num")[j];
-    // console.log(num[j], j);
-    var quan=document.getElementsByClassName("quan")[j];
-    var duan=document.getElementsByClassName("duan")[j];
+    num=document.getElementsByClassName("num")[0];
+    // console.log(num[0], 0);
+    var quan=document.getElementsByClassName("quan")[0];
+    var duan=document.getElementsByClassName("duan")[0];
 
     num.innerHTML=countnum;
-    time.style.color="black";
+    quan.style.color="black";
     quan.innerHTML=time.innerHTML;
-    duan.innerHTML="abc";
-    
 
+    var f=date3;
+    date3=new Date();
+    nowtime=date3-f;
+    console.log(nowtime);
+    nowtime=judge(nowtime);
+    nowtime=infor(nowtime);
+    if(j==0){
+        duan.innerHTML=quan.innerHTML;
+    }else{
+        duan.innerHTML=nowtime.innerHTML;;
+    }
 }
