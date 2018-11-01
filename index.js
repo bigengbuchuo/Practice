@@ -3,7 +3,6 @@ var time=document.getElementsByClassName("top")[0];
 var left=document.getElementsByClassName("left")[0];
 var right=document.getElementsByClassName("right")[0];
 var wrapper=document.getElementsByClassName("wrapper")[0];
-
 var haomiao=document.getElementsByClassName("haomiao")[0];
 var miao=document.getElementsByClassName("miao")[0];
 var minute=document.getElementsByClassName("minute")[0];
@@ -11,12 +10,12 @@ var hour=document.getElementsByClassName("hour")[0];
 var minutespot=document.getElementsByClassName("minutespot")[0];
 var hourspot=document.getElementsByClassName("hourspot")[0];
 
-
 var count=1;
-k=0;
+var k=0;
 var flag;
 var sum=0;
 var nowtime=0;
+var rightflag=0;
 btn.onclick=function(){
     if(flag){
         flag=0;
@@ -24,6 +23,8 @@ btn.onclick=function(){
         k=0;
     }
     if(count){//count=1,sanjiao
+        flag=0;
+        rightflag=1;
         btn.style.backgroundPosition="52% 147%";
         left.style.backgroundImage="url(./src/img/back2.png)";
         right.style.backgroundImage="url(./src/img/time.png)";
@@ -36,6 +37,7 @@ btn.onclick=function(){
             time=infor(digit);
         },10);
     }else{//count=0,shugang
+        flag=1;
         btn.style.backgroundPosition="60% -43%";
         left.style.backgroundImage="url(./src/img/back.png)";
         right.style.backgroundImage="url(./src/img/time2.png)";
@@ -43,6 +45,7 @@ btn.onclick=function(){
         console.log(timer);
         clearInterval(timer);
         k=sum;
+        rightflag=0;
     }
 }                                        
 
@@ -83,11 +86,16 @@ function infor(digit) {
 }
 
 left.onclick=function() {
+    if(flag){
     rightlist.style.display="none";
     flag=1;
     countnum=0;
     wrapper.setAttribute("class","wrapper");
+    while(rightlist.hasChildNodes()){
+    rightlist.removeChild(rightlist.children[2]);
+    }
     areturn();
+    }
 }
 
 function areturn (){
@@ -102,7 +110,9 @@ rightlist.style.display="none";
 var countnum=0;
 var j=-1;
 var date3=0;
+
 right.onclick=function() {
+    if(rightflag){
     rightlist.style.display="block";
     countnum++;
     j++;
@@ -112,7 +122,6 @@ right.onclick=function() {
     div.setAttribute("class","list");
     // rightlist.appendChild(div);
     rightlist.insertBefore(div,rightlist.children[2]);
-
 
     var list=document.getElementsByClassName("list")[0];
     div=document.createElement("div");
@@ -146,5 +155,6 @@ right.onclick=function() {
         duan.innerHTML=quan.innerHTML;
     }else{
         duan.innerHTML=nowtime.innerHTML;;
+    }
     }
 }
