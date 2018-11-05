@@ -32,7 +32,6 @@
             vertical-align:0.1rem;
         }
         .wrapper{
-            border:1px solid black;
             position:absolute;
             width:30rem;
             height:40rem;
@@ -53,7 +52,6 @@
             margin-left:-7.5rem;
         }
         .time{
-            border:1px solid black;
             color:#fff;
             position:absolute;
             left:50%;
@@ -70,7 +68,6 @@
             text-shadow:3px 2px rgba(117, 111, 111, 0.877);
         }
         .reset{
-            border:1px solid black;
             position:absolute;
             left:13%;
             top:60%;
@@ -84,7 +81,6 @@
             font-weight:100;
         }
         .pause{
-            border:1px solid black;
             position:absolute;
             right:13%;
             top:60%;
@@ -112,28 +108,41 @@
             text-align: center;
             line-height:2.1rem;
         }
-        
-        /* .list{
-            border:1px solid black;
-            position: absolute;
-            width:15rem;
-            height:8.5rem;
-            bottom:0;
-            right:0;
-            margin:1.5rem;
-            background-clip:content-box;
-            background-color: rgba(255,255,255,0.7);
+        .list {
+            width:13rem;
+            height:6rem;
+            position:absolute;
+            bottom:5%;
+            right:10%;
+            overflow: hidden;
+            overflow-y: auto;
         }
-        
-        .text{
-            border:1px solid black;
-            position: absolute;
-            width:10rem;
+        .listwrap{
+            border-bottom:1px solid #fff;
+            width:13rem;
             height:3rem;
-            top:0;
-            left:5%;
-        } */
-       
+            color:#fff;
+            font-size:1.5rem;
+        }
+        .num{
+            width:4rem;
+            height:2.8rem;
+            text-align: center;
+            line-height:2.8rem;
+            display:inline-block;
+        }
+        .listime{
+            margin-left:1rem;
+            width:7rem;
+            height:2.8rem;
+            text-align: center;
+            line-height:2.8rem;
+            display:inline-block;
+            font-weight:normal;
+        }
+        .listime>div{
+            text-shadow:none!important;
+        }
         .needle{
             width:15rem;
             height:15rem;
@@ -141,6 +150,12 @@
             background-size:15rem;
             background-repeat: no-repeat;
             position:absolute;
+            animation: mymove 3s linear infinite paused;
+            transition:all 0.5s ease-in-out; 
+        }
+        @keyframes mymove{
+            0% {transform: rotate(0deg)}
+            100% {transform: rotate(360deg)}
         }
         
     </style>
@@ -162,12 +177,9 @@
         <div class="pause">PAUSE</div>
         <div class=infor>
             <div class="left">+</div>
-            <div class="list">
-                <div class="num"></div>
-                <div class="listtime"></div>
-            </div>
+            <div class="list"></div>
         </div>
     </div>
 </body>
-<script src="./index.js"></script>
+<script src="./index_moblie.js"></script>
 </html>
