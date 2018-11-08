@@ -1,237 +1,240 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sign up</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            list-style:none;
-            text-decoration: none;
-        }
-        html{
-            width:100%;
-            height:100%;
-            background:linear-gradient(to bottom right, #AEEEEE,#EED2EE);
-            font-size:62.5%;
-        }
-        .left{
-            border:1px solid black;
-            width:35vw;
-            height:45vh;
-            position:relative;
-            top:30vh;
-            left:10vw;
-        }
-        .right{
-            border:1px solid black;
-            width:30vw;
-            height:75vh;
-            position:relative;
-            top:-27.5vh;
-            left:50vw;
-        }
-        .text1{
-            border:1px solid black;
-            display:inline-block;
-            font-size:1rem;
-            line-height:2rem;
-            padding:0 1rem;
-            color:#fff;
-        }
-        .text2{
-            border:1px solid black;
-            display:inline-block;
-            font-size:4rem;
-            font-weight:blod;
-            padding:0.5rem 1rem;
-            color:#fff;
-        }
-        .text3{
-            border:1px solid black;
-            display:inline-block;
-            font-size:1rem;
-            font-weight:blod;
-            margin:2rem 0;
-            padding:0.5rem 1rem;
-            color:#fff;
-        }
-        .bottom{
-            border:1px solid black;
-            width:100%;
-            height:30%;
-            position:absolute;
-            bottom:0;
-        }
-        .vedio{
-            border:1px solid black;
-            width:8vw;
-            height:7vw;
-            position:absolute;
-            left:1rem;
-            top:50%;
-            margin-top:-3.5vw;
-        }
-        .text4{
-            border:1px solid black;
-            display:inline-block;
-            position:absolute;
-            font-size:1rem;
-            margin:2rem 0;
-            padding:0.5rem 0;
-            top:50%;
-            left:30%;
-            margin-top:-3.5vw;
-        }
-        .text5{
-            border:1px solid black;
-            display:inline-block;
-            position:absolute;
-            font-size:1rem;
-            margin:2rem 0;
-            padding:0.5rem 0;
-            bottom:50%;
-            left:30%;
-            margin-bottom:-3.5vw;
-        }
-        .card{
-            border:1px solid black;
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:90%;
-        }
-        .spot{
-            border:1px solid black;
-            position:absolute;
-            bottom:0;
-            left:0;
-            width:100%;
-            height:10%;
-        }
-        .card1{
-            background-color:rgba(255,255,255,0.2);
-            border-radius: 10px;
-            width:90%;
-            height:60%;
-            position:absolute;
-            top:20%;
-            left:50%;
-            margin-left:-45%;
-        }
-        .card2{
-            background-color:rgba(255,255,255,0.4);
-            border-radius: 10px;
-            width:80%;
-            height:70%;
-            position:absolute;
-            top:15%;
-            left:50%;
-            margin-left:-40%;
-        }
-        .card3{
-            background-color:rgba(255,255,255,1);
-            border-radius: 10px;
-            width:70%;
-            height:80%;
-            position:absolute;
-            top:10%;
-            left:50%;
-            margin-left:-35%;
-        }
-        ul>li{
-            display:inline-block;
-            width:1rem;
-            height:1rem;
-            background-color:#fff;
-            border-radius: 50%;
-            opacity: 0.7;
-        }
-        ul:first-child{
-            margin-left:46%;
-        }
-        .title{
-            font-size:2.5rem;
-            position:absolute;
-            top:4%;
-            left:4%;
-            font-weight:bolder;
-        }
-        .name{
-            position:absolute;
-            font-size:1.5rem;
-            width:100%;
-            top:24%;
-            left:4%;
-        }
-        .putname{
-            top:30%;
-            left:4%;
-            position:absolute;
-            color:rgb(116, 111, 111);
-        }
-        .password{
-            position:absolute;
-            font-size:1.5rem;
-            top:44%;
-            left:4%;
-        }
-        .putpass{
-            position:absolute;
-            color:#fff;
-            top:50%;
-            left:4%;
-            color:rgb(116, 111, 111);
-        }
-        .button{
-            width:5rem;
-            height:3rem;
-            border-radius:3px;
-            position:absolute;
-            top:70%;
-            left:4%;
-            background-color: #fff;
-            border:1px solid black;
-        }
-    
-    </style>
-<body>
-    <div class="left">
-        <div class="text1">OUR APPROACH</div>
-        <div class="text2">我们用宽阔的眼界洞察世界</div>
-        <div class="text3">在这个世界上有两种人告诉你无法做出改变：一种害怕去尝试，一种恐惧你成功。</div>
-        <div class="bottom"> 
-        <div class="vedio"></div>
-        <div class="text4">观看视频</div>
-        <div class="text5">我们不同在哪里？</div>
-        </div>
-    </div>
-    <div class="right">
-        <div class="card">
-            <div class="card1"></div>
-            <div class="card2"></div>
-            <div class="card3">
-                <div class="title">Sign Up</div>
-                <div class="name">用户名</div>
-                <input class="putname" type="text" value="123456" checked="checked" name="账户" width="8" required="required">
-                <div class="password">密码</div>
-                <input class="putpass" type="password" value="123456" checked="checked" name="密码" width="8" required="required">
-                <input class="button" type="submit" value="login"></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>sign up</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-decoration: none;
+            }
+            
+            html {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom right, #2bcfcf, #f54df5);
+                font-size: 62.5%;
+            }
+            .wrapper {
+                margin: 15vh auto;
+                /* border: 1px solid black; */
+                width: 70vw;
+                height: 70vh;
+                overflow: hidden; 
+            }
+
+
+            .left {
+                border: 1px solid #fff;
+                width: 30vw;
+                height: 40vh;
+                position:relative;
+                top:50%;
+                margin-top:-20vh;
+            }
+
+            .right {
+                /* border: 1px solid black; */
+                position:relative;
+                width: 38vw;
+                height: 100%;
+                float: right;
+            }
+
+            .text1{
+                /* border:1px solid black; */
+                font-size:1rem;
+                line-height:2rem;
+                padding:0 1rem;
+                color:#fff;
+            }
+            .text2{
+                /* border:1px solid black; */
+                font-size:4rem;
+                font-weight:blod;
+                padding:0.5rem 1rem;
+                color:#fff;
+            }
+            .text3{
+                /* border:1px solid black; */
+                font-size:1rem;
+                font-weight:blod;
+                margin:2rem 0;
+                padding:0.5rem 1rem;
+                color:#fff;
+            }
+            .vedio{
+                border:1px solid black;
+                width:5vw;
+                height:4vw;
+                margin-left:1vw;
+                float:left;
+                margin-right: 2vw;
+            }
+            .text4{
+                font-size:1rem;
+            }
+            .text5{
+                margin-top:2vh;
+                font-size:1rem;
+            }
+            .card1{
+                background-color:rgba(255,255,255,0.2);
+                border-radius: 10px;
+                width:90%;
+                height:60%;
+                position:absolute;
+                top:20%;
+                left:50%;
+                margin-left:-45%;
+            }
+            .card2{
+                background-color:rgba(255,255,255,0.4);
+                border-radius: 10px;
+                width:80%;
+                height:70%;
+                position:absolute;
+                top:15%;
+                left:50%;
+                margin-left:-40%;
+            }
+            .card3{
+                background-color:rgba(255,255,255,1);
+                border-radius: 10px;
+                width:70%;
+                height:80%;
+                position:absolute;
+                top:10%;
+                left:50%;
+                margin-left:-35%;
+            }
+            .title{
+                font-size:2.5rem;
+                font-weight:bolder;
+            }
+            .num{
+                font-size:1.5rem;
+                width:100%;
+                margin-top: 3rem;
+                margin-left: 1.2rem;
+            }
+            .putnum{
+                    width:60%;
+                    margin-top: 0.5rem;
+                    margin-left: 1.2rem;
+            }
+            .name{
+                font-size:1.5rem;
+                width:100%;
+                margin-top: 1.5rem;
+                margin-left: 1.2rem;
+            }
+            .putname{
+                width:60%;
+                margin-top: 0.5rem;
+                margin-left: 1.2rem;
+            }
+            .class{
+                font-size:1.5rem;
+                width:100%;
+                margin-top: 1.5rem;
+                margin-left: 1.2rem;
+            }
+            .putclass{
+                width:60%;
+                margin-top: 0.5rem;
+                margin-left: 1.2rem;
+            }
+            .sex{
+                font-size:1.5rem;
+                width:100%;
+                margin-top: 1.5rem;
+                margin-left: 1.2rem;
+            }
+            .putsex{
+                width:60%;
+                margin-top: 0.5rem;
+                margin-left: 1.2rem;
+            }
+            .button{
+                width:5rem;
+                height:3rem;
+                border-radius:3px;
+                margin-top:2rem;
+                margin-left: 1.2rem;
+                background-color: #fff;
+                border:1px solid black;
+                display: block;
+            }
+            .cardown{
+                position: absolute;
+                width:1rem;
+                height:1rem;
+                left:50%;
+                margin-left:-0.5rem;
+                top:0;
+                background-color:#fff;
+                opacity: 0;
+                z-index:1;
+                transition: all 1s;
+            }
+            .newcardown{
+                position: absolute;
+                opacity: 1;
+                left:50%;
+                width:38vw;
+                height:45vh;
+                margin-left:-19vw;
+                top:20vh;    
+                background-color:rgb(242, 241, 241,0.6);
+                border-radius: 10px;
+                z-index:1;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="right">
+                <div class="card">
+                    <div class="card1"></div>
+                    <div class="card2"></div>
+                    <div class="card3">
+                        <div class="title">Sign Up</div>
+                        <div class="num">学号</div>
+                        <input class="putnum" type="text" value="123456" checked="checked" name="学号" width="8" required="required">
+                        <div class="name">姓名</div>
+                        <input class="putname" type="text" value="" checked="checked" name="姓名" maxlength="8" required="required">
+                        <div class="class">班级</div>
+                        <input class="putclass" type="text" value="" checked="checked" name="班级" width="6" required="required">
+                        <div class="sex">性别</div>
+                        <input class="putsex" type="text" value="男" checked="checked" name="性别" width="1" required="required">
+
+                        <input class="button" type="submit" value="login">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="text1">OUR APPROACH</div>
+                <div class="text2">我们用宽阔的眼界洞察世界</div>
+                <div class="text3">在这个世界上有两种人告诉你无法做出改变：一种害怕去尝试，一种恐惧你成功。</div>
+                <div class="vedio"></div>
+                <div class="text4">观看视频</div>
+                <div class="text5">我们不同在哪里？</div>
+              
+            </div>
+
+            <div class="glass">
+                <div class="cardown"></div>
             </div>
         </div>
-        <div class="spot">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </div>
 
-</body>
-<script src="./index.js"></script>
+    </body>
+    <script src="./index.js"></script>
+
 </html>
