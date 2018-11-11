@@ -115,11 +115,13 @@
             .title{
                 font-size:2.5rem;
                 font-weight:bolder;
+                margin-left: 1.2rem;
+                margin-top: 1.2rem;
             }
             .num{
                 font-size:1.5rem;
                 width:100%;
-                margin-top: 3rem;
+                margin-top: 2rem;
                 margin-left: 1.2rem;
             }
             .putnum{
@@ -194,6 +196,40 @@
                 border-radius: 10px;
                 z-index:1;
             }
+            .message{
+                font-size:1.5rem;
+                width:60%;
+                margin-top: 2rem;
+                margin-left: 38%;
+            }
+            .back{
+                width:5rem;
+                height:3rem;
+                border-radius:3px;
+                margin-top:3rem;
+                margin-left: 37%;
+                background-color:rgba(255,255,255,0.3);
+                border:2px solid #fff;
+                display: inline-block;
+                color:#fff;
+                text-align: center;
+                font-weight:bolder;
+                line-height:2.5rem;
+           }
+           .confirm{
+                width:5rem;
+                height:3rem;
+                border-radius:3px;
+                margin-top:3rem;
+                margin-left: 3rem;
+                background-color:rgba(255,255,255,0.3);
+                border:2px solid #fff;
+                display: inline-block;
+                color:#fff;
+                text-align: center;
+                font-weight:bolder;
+                line-height:2.5rem;
+           }
             
         </style>
     </head>
@@ -206,13 +242,13 @@
                     <div class="card3">
                         <div class="title">Sign Up</div>
                         <div class="num">学号</div>
-                        <input class="putnum" type="text" value="123456" checked="checked" name="学号" width="8" required="required">
+                        <input class="putnum" type="text" value="" checked="checked" name="学号" width="8" required="required">
                         <div class="name">姓名</div>
                         <input class="putname" type="text" value="" checked="checked" name="姓名" maxlength="8" required="required">
                         <div class="class">班级</div>
                         <input class="putclass" type="text" value="" checked="checked" name="班级" width="6" required="required">
                         <div class="sex">性别</div>
-                        <input class="putsex" type="text" value="男" checked="checked" name="性别" width="1" required="required">
+                        <input class="putsex" type="text" value="" checked="checked" name="性别" width="1" required="required">
 
                         <input class="button" type="submit" value="login">
                         </button>
