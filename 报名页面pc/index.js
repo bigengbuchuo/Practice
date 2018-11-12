@@ -29,24 +29,60 @@ button.addEventListener("click",function(){
     var confirm=document.getElementsByClassName("confirm")[0];
     var back=document.getElementsByClassName("back")[0];
     back.addEventListener("click",function(){
-        while(glass.children[1]){
-            glass.removeChild(glass.children[1]);
-        }newcardown.style.display="none";
-        left.style.filter="blur(0)";
-        right.style.filter="blur(0)";
-        
-    })
-    confirm.addEventListener("click",function(){
-        while(glass.children[1]){
-            glass.removeChild(glass.children[1]);
+        while(cardown.children[1]){
+            cardown.removeChild(cardown.children[1]);
         }
         newcardown.style.display="none";
-        for(var i=0;i<4;i++){
-            input.value="";
-        }
         left.style.filter="blur(0)";
         right.style.filter="blur(0)";
     })
-  
+    confirm.addEventListener("click",function(){
+        while(cardown.children[1]){
+            cardown.removeChild(cardown.children[1]);
+        }
+        for(var i=0;i<4;i++){
+            input[i].value="";
+        }
+        newcardown.style.display="none";
+        left.style.filter="blur(0)";
+        right.style.filter="blur(0)";
+        Ajax({
+            url: "http://join.xiyoumobile.com/signup/user/add",
+            type: "post",
+            data: "sid="+card3.children[2]+"&name="+card3.children[4]+"&clazz="+card3.children[6]+"&sex="+card3.children[8],
+            async:true,  //是否异步
+        });
+    })
 })
+
+function Ajax(object){
+    xhr=new XMLHttpRequest();
+    xhr.addEventListener("readystatechange",function(){
+        if(xhr.readyState==4){
+            var status=xhr.status;
+            if(status>=200&&status<300){
+                object.success(xhr.responseText);
+            }else{
+                object.fail(status);
+            }
+        }
+    })
+    var message=transfrom(object.data);
+    if(object.type=="get"){
+        xhr.open("get",object.url+"?"+message,object.async);
+        xhr.send(null);
+    }else if(object.type=="post"){
+        xhr.open("post",object.url,object.async);
+        xhr.setRequestHeader("Authorization","Basic eGl5b3UzZzp4aXlvdTNnZnoxNTUqKi8v");
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        xhr.send(message);
+    }
+}
+function transfrom(data){
+    var arr=[];
+    for(thing in data){  //用thing来接收data的属性名
+        arr.push(encodeURIComponent(thing)+"="+encodeURIComponent(data[thing]));//访问对象的方式
+    }
+    return arr.join("&");
+}
 
