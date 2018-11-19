@@ -208,7 +208,7 @@
                     <div class="card3">
                         <div class="title">Sign Up</div>
                         <div class="text">学号</div>
-                        <input class="put" type="text" value="" checked="checked" name="学号" width="8" required="required">
+                        <input class="put" type="text"  onkeyup="this.value=this.value.replace(/\D/g,'')" value="" checked="checked" name="学号" width="8" required="required">
                         <div class="text">姓名</div>
                         <input class="put" type="text" value="" checked="checked" name="姓名" maxlength="8" required="required">
                         <div class="text">班级</div>
