@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #f6f9fe;
+    background-image:url(./img/bc.jpg);
+    background-repeat: no-repeat;
+}
+.top{
+    height:70px;
+    margin:0 100px;
+    position: relative;
+}
+.pic1{
+    float:left;
+    height:37px;
+    margin:13px 0;
+}
+.pic1::before{
+    content:"";
+    clear:both;
+}
+.line{
+    width:100%;
+    border-bottom:1px solid #f6f9fe;
+    margin-bottom:65px;
+}
+.location{
+    height:37px;
+    float:right;
+    margin-top:22px;
+}
+.text{
+    display: inline-block;
+    margin-right:10px;
+    color:#fff;
+    font-size:17px;
+}
+.xb{
+    height: 20px;
+    width: 18px;
+    background-image: url(./img/xb.png);
+    background-position: -208px -121px;
+    background-size: 228px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.tj{
+    font-size:15px;
+    color:rgba(238, 226, 238, 0.822);
+}
+.search{
+    width: 251px;
+    height: 30px;
+    background: rgba(255,255,255,.2);
+    color: rgba(255,255,255,.7);
+    font-size:14px;
+    vertical-align: middle;
+    border-radius: 49px;
+    line-height:30px;
+    padding-left:9px;
+}
+.container{
+    height:310px;
+    position: relative;
+    margin:0 100px;
+}
+.bigpic{
+    position: absolute;
+    top: 56px;
+    right: 152px;
+    height: 134px;
+}
+.alt{
+    display:block;
+    color:#fff;
+    margin-bottom: 5px;
+}
+.lines{
+    margin-bottom: 18px;
+}
+.line1{
+    font-size:15px;
+    color:rgba(238, 226, 238, 0.822);
+}
+.line2{
+    font-size:16px;
+    display:inline-block;
+    margin-right:15px;
+}
+.p1{
+    font-size:86px;
+}
+.p2{
+    font-size:30px;
+}
+.p3{
+    width: 71px;
+    height: 25px;
+    font-size:16px;
+    background-color: #f0cc35;
+    border-radius: 16px;
+    line-height: 25px;
+}
+.p3::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(./img/xb.png);
+    background-position: -157px -30px;
+    background-size: 171px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+    margin:3px 8px 3px 3px;
+}
+.line3{
+    font-size:18px;
+    display:inline-block;
+    margin-right:20px;
+}
+.s1::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/xb.png);
+    background-position: -163px -142px;
+    background-size: 202px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.s2::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/xb.png);
+    background-position: -163px -102px;
+    background-size: 202px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.s3::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/xb.png);
+    background-position: -163px -81px;
+    background-size: 202px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.a1::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#fff;
+    margin-right:5px;
+}
+.a1::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/xb.png);
+    background-position: -102px -165px;
+    background-size: 202px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.middle{
+    width:1200px;
+    height:521px;
+    margin:100px auto;
+    margin-bottom:500px;
+}
+.left{
+    width: 740px;
+    height: 492px;
+    padding: 20px 0 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 14px 0 rgba(0,0,0,.08);
+}
+.right{
+    float:right;
+    width: 430px;
+    height: 492px;
+    border-radius: 10px;
+}
+.rlist{
+    width: 430px;
+    height: 21px;
+    font-size:18px; 
+    padding-top:5px;
+}
+.rlist::before{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color:black;
+    vertical-align: middle;
+    margin-right:10px;
+}
+
+.rpic1{
+    width: 20px;
+    height: 20px;
+    float:right;
+    background-image: url(./img/xb.png);
+    background-position: -102px -165px;
+    background-image: url(./img/xb.png);
+    background-position: -102px -165px;
+    background-size: 202px;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
