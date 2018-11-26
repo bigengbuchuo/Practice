@@ -181,7 +181,7 @@ body{
     width:1200px;
     height:521px;
     margin:100px auto;
-    margin-bottom:500px;
+    margin-bottom:80px;
 }
 .left{
     width: 740px;
@@ -249,10 +249,13 @@ body{
 .box{
     width:440px;
     height:480px;
+    overflow: hidden;
+    position: relative;
 }
 .boxch{
     width:900px;
     height:480px;
+    position:absolute;
 }
 .bp{
     width:22.5%;
@@ -264,13 +267,29 @@ body{
     padding:10px;
     box-shadow: 0 0 14px 0 rgba(0,0,0,.08);
     position: relative;
+    overflow: hidden;
 }
+
 .bbox{
-    width:200px;
+    width:100%;
+    height:100%;
     padding-top:15px;
     margin:0 auto;
     text-align: center;
+    overflow: hidden;
+    transition: 0.87s;
 }
+
+.bp:hover .bbox{
+    height:0;
+}
+.bbox1{
+    height:0;
+    font-size:13px;
+    padding:12px;
+    margin:0 3%;
+}
+
 .bpic{
     width:50px;
     height:50px;
@@ -279,6 +298,7 @@ body{
     background-size: 320px;
     margin-bottom:10px;
     margin:10px auto;
+    
 }
 .btext{
     font-size:13.5px;
@@ -322,21 +342,16 @@ body{
 }
 .bpic10{
     background-image: url(./img/xb.png);
-    background-position: -49px -57px;
+    background-position:5px -57px;
 }
 .bpic11{
     background-image: url(./img/xb.png);
-    background-position: -101px -208px;
+    background-position: -49px -154px;
 }
 .bpic12{
     background-image: url(./img/xb.png);
-    background-position: -101px -208px;
+    background-position: -100px -110px;
 }
-
-
-
-
-
 
 
 
@@ -434,4 +449,41 @@ body{
 .lfp33{
     margin:10px 0;
     color:#c2c2c2;
+}
+
+.bottom{
+    width:100%;
+    background-color: #3a4570;
+    padding:50px 0;
+}
+.botpicbox{
+    width:60%;
+    height:20%;
+    margin:0 auto;
+}
+.botpic{
+    width:150px;
+    height:41px;
+    background-repeat: no-repeat;
+    margin:0 65px;
+    display:inline-block;
+}
+.botpic1{
+    background-image: url(./img/b1.png);
+}
+.botpic2{
+    background-image: url(./img/b2.png);
+}
+.botpic3{
+    background-image: url(./img/b3.png);
+}
+.botbox{
+    width:80%;
+    margin:0 auto;
+}
+.bottext{
+    padding-top:30px;
+    text-align: center;
+    font-size:12px;
+    color:#fff;
 }
