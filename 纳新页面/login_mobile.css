@@ -55,7 +55,7 @@ html{
     margin-left:-16.5rem;
     top:20rem;
 }
-.btn1{
+.logup_btn1{
     position:absolute;
     width:22rem;
     height:4rem;
@@ -70,7 +70,7 @@ html{
     color: #9599a2;
 
 }
-.btn2{
+.logup_btn2{
     position:absolute;
     width:22rem;
     height:4rem;
@@ -98,4 +98,49 @@ html{
     text-align:center;
     line-height:5rem;
     color: #f9f9fa;
+}
+
+/* 注册 */
+.login_btn1{
+    position:absolute;
+    width:22rem;
+    height:4rem;
+    background-color:#303741;
+    left:50%;
+    margin-left:-11.5rem;
+    top:50%;
+    font-size:2rem;
+    font-weight:90;
+    text-align:center;
+    line-height:4rem;
+    color: #9599a2;
+
+}
+.login_btn2{
+    position:absolute;
+    width:22rem;
+    height:4rem;
+    background-color:#303741;
+    left:50%;
+    margin-left:-11.5rem;
+    top:59%;
+    font-size:2rem;
+    font-weight:90;
+    text-align:center;
+    line-height:4rem;
+    color: #9599a2;
+}
+.login_btn3{
+    position:absolute;
+    width:22rem;
+    height:4rem;
+    background-color:#303741;
+    left:50%;
+    margin-left:-11.5rem;
+    top:68%;
+    font-size:2rem;
+    font-weight:90;
+    text-align:center;
+    line-height:4rem;
+    color: #9599a2;
 }
