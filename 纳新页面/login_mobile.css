@@ -195,3 +195,77 @@ input{
     text-align:center;
     line-height:4rem;
 }
+.btn_picnum{
+    position:absolute;
+    width: 6.5rem;
+    height: 2.8rem;
+    background-color:#303741;
+    border:1px solid #9599a2;
+    border-radius: 1rem;
+    right:0%;
+    top:50%;
+    margin-top:-1.4rem;
+    font-size:1.3rem;
+    font-weight:90;
+    text-align:center;
+    line-height:2.8rem;
+    color: #9599a2;
+    /* opacity: 0; */
+    transition:opacity 5s;
+}
+.newbtn_picnum{
+    position:absolute;
+    width: 6.5rem;
+    height: 2.8rem;
+    background-color:#303741;
+    border:1px solid #9599a2;
+    border-radius: 1rem;
+    right:0%;
+    top:50%;
+    margin-top:-1.4rem;
+    font-size:1.3rem;
+    font-weight:90;
+    text-align:center;
+    line-height:2.8rem;
+    color: #9599a2;
+    opacity: 1;
+    transition:opacity 10s;
+}
+.reminder_pic {
+    position: absolute;
+    width: 26rem;
+    height: 17rem;
+    background-color: #A9A9A9;
+    left: 50%;
+    margin-left: -13rem;
+    margin-top: -8.5rem;
+    top: 50%;
+    font-size: 2rem;
+    font-weight: 90;
+    border-radius: 1rem;
+    z-index: 2;
+}
+.cloth{
+    width: 100%;
+    height:100%;
+    background-color:#303741;
+    position:relative;
+    font-size:62.5%;
+    opacity: 0.5;
+    z-index: 1;
+}
+picnum_text1{
+    position: absolute;
+    height: 4rem;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -13rem;
+    margin-top: -8.5rem;
+    top: 10%;
+    font-size: 2rem;
+    font-weight: 90;
+    z-index: 2;
+}
+/* .picnum_pic{
+
+} */
