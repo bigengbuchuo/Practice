@@ -1,0 +1,147 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+/*header style*/
+.header {
+    height:60px;
+    line-height:60px;
+}
+.header .nav {
+    list-style: none;
+}
+.header .nav::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.header .nav li {
+    float:right;
+    margin-right: 20px;
+}
+.header .nav .more {
+    margin-right: 12px;
+}
+.header .nav li a {
+    color: #333;
+    font-weight: 700;
+    font-size: 13px;
+}
+.header .nav a:hover {
+    color: #00c;
+}
+.header .nav .more a {
+    font-weight: 100;
+    background-color: #38f;
+    text-decoration: none;
+    color:  #fff;
+    padding: 6px;
+}
+.header .nav .gray a{
+    font-weight: 100;
+}
+
+/*search style*/
+.search {
+    margin-top: 40px;
+}
+.search .logo {
+    text-align: center;
+}
+.search .logo img {
+    width: 270x;
+    height: 129px;
+}
+.search .keyword {
+    margin-top: 20px;
+    text-align: center;
+}
+.search .keyword form div {
+    display: inline-block;
+}
+.search .keyword form .inpWrapper {
+    position: relative;
+}
+.search .keyword form .inpWrapper input {
+    width: 539px;
+    height: 34px;
+    border: 1px solid #b6b6b6
+}
+.search .keyword form .inpWrapper span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+    width: 18px;
+    height: 16px;
+    background-image: url(../img/camera.png);
+}
+.search .keyword form .inpWrapper span:hover {
+    background-position: 0px 18px;
+    cursor: pointer;
+}
+.search .keyword form .btnWrapper {
+    margin-left: -5px;
+}
+.search .keyword form .inpWrapper {
+    vertical-align: 2px;
+}
+
+.search .keyword form .btnWrapper input {
+    width: 100px;
+    height: 36px;
+    background: #3385ff;
+    cursor: pointer;
+    color:#fff;
+    font-size: 15px;
+    border: none;
+}
+
+/*info style*/
+.info {
+    margin-top: 270px;
+    text-align: center;
+}
+.info .weixin img {
+    width:60px;
+    height:60px;
+}
+.info .weixin p {
+    font-size: 13px;
+    margin-top: 4px;
+    color:#444;
+}
+.info .message {
+    margin-top: 20px;
+}
+.info .message p a,span {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #999;
+}
+info .message p {
+    padding: 5px 0px;
+}
+.info .message .line1 a {
+    color: #999;
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.info .message .line2 .icon {
+    display: inline-block;
+    width: 14px;
+    heigth: 17px;
+    background-image: url('../img/icons.png');
+}
+.info .message .line2 .icon1 {
+    background-position: -600px -96px;
+    margin-right: 15px;
+}
+.info .message .line2 .icon2 {
+    background-position: -623px -96px;
+}
+
+
